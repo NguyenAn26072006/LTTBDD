@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/sm_bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="20dp">
+        <TextView android:id="@+id/btnClosePicker" style="@style/SMTopIcon" android:text="×"/>
+        <TextView style="@style/SMTopTitle" android:text="Chọn hình ảnh" android:layout_weight="1"/>
+        <TextView android:id="@+id/btnDonePicker" android:text="Xong (0)" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textColor="@color/sm_blue" android:textStyle="bold"/>
+    </LinearLayout>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="48dp" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="horizontal" android:paddingHorizontal="16dp">
+            <Button style="@style/SMChipSelected" android:text="Gần đây"/>
+            <Button style="@style/SMChip" android:text="Camera"/>
+            <Button style="@style/SMChip" android:text="Tải xuống"/>
+            <Button style="@style/SMChip" android:text="Zalo"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView style="@style/SMHint" android:padding="16dp" android:text="Chọn tối đa 5 ảnh. Ảnh đầu tiên là ảnh bìa."/>
+    <GridLayout android:id="@+id/gridImages" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:columnCount="3" android:paddingHorizontal="12dp" android:alignmentMode="alignMargins" android:useDefaultMargins="true"/>
+    <LinearLayout style="@style/SMBottomActions">
+        <Button android:id="@+id/btnUseSelectedImages" style="@style/SMButtonPrimaryFull" android:text="Dùng ảnh đã chọn"/>
+    </LinearLayout>
+</LinearLayout>

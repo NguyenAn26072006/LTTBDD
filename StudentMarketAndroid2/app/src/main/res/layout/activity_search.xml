@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/sm_background">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="← Search 👤" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="18sp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="14dp" android:orientation="horizontal" android:gravity="center_vertical">
+                <EditText android:id="@+id/edtSearch" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@drawable/bg_sm_search" android:padding="12dp" android:singleLine="true" android:hint="⌕ Java"/>
+                <TextView android:id="@+id/btnOpenFilter" android:layout_width="52dp" android:layout_height="match_parent" android:gravity="center" android:text="☷" android:textSize="24sp" android:textColor="@color/sm_primary"/>
+            </LinearLayout>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:scrollbars="none">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="38dp" android:gravity="center" android:paddingHorizontal="14dp" android:background="@drawable/bg_sm_primary_button" android:text="Tất cả cơ sở ⌄" android:textColor="#FFFFFF"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="38dp" android:layout_marginStart="8dp" android:gravity="center" android:paddingHorizontal="14dp" android:background="@drawable/bg_sm_chip" android:text="Giá sinh viên ⌄" android:textColor="@color/sm_text"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="38dp" android:layout_marginStart="8dp" android:gravity="center" android:paddingHorizontal="14dp" android:background="@drawable/bg_sm_chip" android:text="Độ mới >90%" android:textColor="@color/sm_text"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:padding="14dp" android:background="@drawable/bg_sm_card" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◷ Tìm kiếm gần đây Xóa lịch sử" android:textColor="@color/sm_text" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Java Máy tính Casio Laptop cũ\n\nSách kinh tế Tai nghe" android:textColor="@color/sm_subtext"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Tìm thấy 28 kết quả cho “Java”" android:textColor="@color/sm_text" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phù hợp nhất ≡" android:textColor="@color/sm_primary"/>
+            </LinearLayout>
+            <GridLayout android:id="@+id/gridSearchResults" android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="2" android:layout_marginTop="8dp">
+                <include layout="@layout/item_product_card"/>
+                <include layout="@layout/item_product_card"/>
+                <include layout="@layout/item_product_card"/>
+                <include layout="@layout/item_product_card"/>
+            </GridLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="16dp" android:background="@drawable/bg_sm_chip" android:text="♧ Tạo thông báo tìm kiếm\nNhận tin khi có bạn mới đăng bán “Java” Bật báo tin" android:textColor="@color/sm_text" android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

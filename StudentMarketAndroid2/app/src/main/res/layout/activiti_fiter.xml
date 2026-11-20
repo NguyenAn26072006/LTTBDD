@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/sm_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="← Bộ lọc sản phẩm" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="20sp"/>
+        <TextView android:id="@+id/btnResetFilter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đặt lại" android:textColor="@color/sm_primary"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tùy chỉnh tiêu chí tìm kiếm" android:textColor="@color/sm_subtext"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="14dp" android:background="@drawable/bg_sm_card" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="▣ Danh mục sản phẩm" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="17sp"/>
+                <TextView android:id="@+id/chipCategories" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Tất cả 📖 Sách ▱ Laptop\n\nĐiện thoại Đồ dùng học tập\n\nĐồ điện tử Khác" android:textColor="@color/sm_primary" android:lineSpacingExtra="8dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="14dp" android:background="@drawable/bg_sm_card" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="₫ Khoảng giá 0đ - 500.000đ" android:textColor="@color/sm_text" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Dưới 100k 100k - 500k\n\n500k - 2Tr Trên 2Tr" android:textColor="@color/sm_primary"/>
+                <SeekBar android:id="@+id/seekPriceRange" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:max="100" android:progress="50"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <EditText android:id="@+id/edtMinPrice" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:hint="Tối thiểu" android:inputType="number" android:background="@drawable/bg_sm_search" android:padding="8dp"/>
+                    <EditText android:id="@+id/edtMaxPrice" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginStart="8dp" android:hint="Tối đa" android:inputType="number" android:background="@drawable/bg_sm_search" android:padding="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="14dp" android:background="@drawable/bg_sm_card" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◉ Tình trạng hàng hóa" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="17sp"/>
+                <RadioGroup android:id="@+id/rgCondition" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tất cả" android:checked="true"/>
+                    <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mới (100% chưa qua sử dụng)"/>
+                    <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Đã qua sử dụng (90-99%) – Như mới"/>
+                    <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Đã qua sử dụng ( &lt; 90%) – Còn tốt"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="14dp" android:background="@drawable/bg_sm_card" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🎓 Khu vực / Trường Đại học" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="17sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="ĐHQG TP.HCM ĐH Bách Khoa\n\nĐH KHTN ĐH Sư Phạm\n\nĐH Ngoại Thương KTX khu B KTX khu A" android:textColor="@color/sm_primary"/>
+                <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ưu tiên bài đăng từ sinh viên cùng khuôn viên trường"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:padding="8dp" android:orientation="horizontal" android:background="@color/sm_card">
+        <Button android:id="@+id/btnResetBottom" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="Đặt lại"/>
+        <Button android:id="@+id/btnApplyFilter" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:layout_marginStart="8dp" android:text="Áp dụng (6 kết quả)"/>
+    </LinearLayout>
+</LinearLayout>

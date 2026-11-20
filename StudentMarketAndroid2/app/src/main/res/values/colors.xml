@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+        <color name="sm_primary">#2162D5</color>
+        <color name="sm_primary_light">#E5EEFF</color>
+        <color name="sm_background">#F7F8FC</color>
+        <color name="sm_card">#FFFFFF</color>
+        <color name="sm_text">#17243A</color>
+        <color name="sm_subtext">#697386</color>
+        <color name="sm_green">#19A879</color>
+        <color name="sm_border">#E8ECF5</color>
+        <color name="sm_red">#C62828</color>
+    <color name="sm_bg">#F7F8FD</color>
+    <color name="sm_blue">#2160D8</color>
+    <color name="sm_blue_light">#EAF1FF</color>
+
+    <color name="sm_muted">#75809A</color>
+
+
+
 </resources>

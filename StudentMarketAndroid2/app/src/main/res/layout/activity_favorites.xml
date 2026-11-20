@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/sm_background">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Student Market 🔍 👤" android:textColor="@color/sm_primary" android:textStyle="bold" android:textSize="20sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Sản phẩm yêu thích 4" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="21sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tổng cộng 4 sản phẩm đang theo dõi" android:textColor="@color/sm_subtext"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:scrollbars="none">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="38dp" android:gravity="center" android:paddingHorizontal="14dp" android:background="@drawable/bg_sm_primary_button" android:text="Tất cả (4)" android:textColor="#FFFFFF"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="38dp" android:layout_marginStart="8dp" android:gravity="center" android:paddingHorizontal="14dp" android:background="@drawable/bg_sm_chip" android:text="Còn hàng (3)" android:textColor="@color/sm_text"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="38dp" android:layout_marginStart="8dp" android:gravity="center" android:paddingHorizontal="14dp" android:background="@drawable/bg_sm_chip" android:text="Đã bán (1)" android:textColor="@color/sm_text"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout android:id="@+id/listFavorites" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="vertical">
+                <include layout="@layout/item_favorite_product"/>
+                <include layout="@layout/item_favorite_product"/>
+                <include layout="@layout/item_favorite_product"/>
+                <include layout="@layout/item_favorite_product"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:padding="18dp" android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_sm_chip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="♥" android:textColor="@color/sm_primary" android:textSize="38sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Minh họa trạng thái trống" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="18sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Chưa có sản phẩm yêu thích nào. Hãy bấm lưu các món đồ hời khi lướt bản tin bạn nhé!" android:textColor="@color/sm_subtext"/>
+                <Button android:id="@+id/btnExploreMarket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Khám phá chợ sinh viên"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_navigation"/>
+</LinearLayout>

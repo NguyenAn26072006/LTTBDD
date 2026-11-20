@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:padding="10dp" android:orientation="horizontal" android:background="@drawable/bg_sm_card">
+    <ImageView android:id="@+id/imgFavoriteProduct" android:layout_width="104dp" android:layout_height="104dp" android:scaleType="centerCrop" android:src="@android:drawable/ic_menu_gallery" android:contentDescription="Ảnh sản phẩm"/>
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingStart="10dp">
+        <TextView android:id="@+id/tvFavoriteName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Giáo trình Java cơ bản" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="16sp" android:maxLines="2"/>
+        <TextView android:id="@+id/tvFavoritePrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="50.000₫ ● Còn hàng" android:textColor="@color/sm_primary" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvFavoriteSeller" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🎓 Tuấn Bách Khoa" android:textColor="@color/sm_subtext" android:textSize="12sp"/>
+        <TextView android:id="@+id/tvFavoriteTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2 giờ trước • Sách vở" android:textColor="@color/sm_subtext" android:textSize="12sp"/>
+        <TextView android:id="@+id/btnFavoriteBuy" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_gravity="end" android:gravity="center" android:paddingHorizontal="12dp" android:background="@drawable/bg_sm_primary_button" android:text="Mua ngay →" android:textColor="#FFFFFF" android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView android:id="@+id/btnRemoveFavorite" android:layout_width="28dp" android:layout_height="32dp" android:gravity="center" android:text="♥" android:textColor="@color/sm_red" android:textSize="20sp"/>
+</LinearLayout>

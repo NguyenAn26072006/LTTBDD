@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/sm_background">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="48dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="← Product Detail 👤" android:textColor="@color/sm_text" android:textStyle="bold"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="230dp">
+                <ImageView android:id="@+id/imgDetailProduct" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@android:drawable/ic_menu_gallery" android:contentDescription="Ảnh sản phẩm"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|start" android:layout_margin="12dp" android:background="@drawable/bg_sm_card" android:padding="8dp" android:text="✦ Sách chính hãng ĐHQG" android:textColor="@color/sm_primary"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end" android:layout_margin="12dp" android:background="@drawable/bg_sm_card" android:padding="8dp" android:text="▣ 1/4 ảnh" android:textColor="@color/sm_text"/>
+            </FrameLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp" android:padding="14dp" android:background="@drawable/bg_sm_card" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sách ,Giáo trình ● Mới 95%" android:textColor="@color/sm_green"/>
+                <TextView android:id="@+id/tvDetailName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Giáo trình Java cơ bản - Khoa CNTT" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="21sp"/>
+                <TextView android:id="@+id/tvDetailPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="50.000₫ 120.000₫ -58%" android:textColor="@color/sm_primary" android:textStyle="bold" android:textSize="20sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="★ 4.9 (18 đánh giá) • Đã bán 6 cuốn" android:textColor="@color/sm_subtext"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:padding="10dp" android:background="@drawable/bg_sm_chip" android:text="Tình trạng: Mới 95% – Không quăn mép, không ghi chú bẩn, giữ bìa bóng cẩn thận." android:textColor="@color/sm_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="12dp" android:padding="14dp" android:background="@drawable/bg_sm_card" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="👤 Lê Minh Tuấn Xem trang" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="17sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="✓ Đã xác minh thẻ SV\nĐH Bách Khoa TP.HCM\nKhoa Khoa học , Kỹ thuật Máy tính\nĐã tham gia 8 tháng • Phản hồi trong 5 phút\n★ 4.9/5.0 (42 giao dịch thành công)" android:textColor="@color/sm_subtext"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp" android:padding="14dp" android:background="@drawable/bg_sm_card" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mô tả sản phẩm" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="18sp"/>
+                <TextView android:id="@+id/tvDetailDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Giáo trình môn Lập trình hướng đối tượng với Java dùng cho sinh viên năm 2 ĐH Bách Khoa và các trường thành viên ĐHQG. Sách còn mới 95%, in bìa màu rõ nét, đầy đủ bài tập và ví dụ thực hành." android:textColor="@color/sm_subtext"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:padding="10dp" android:background="@drawable/bg_sm_chip" android:text="🎁 Quà tặng kèm: File slide bài giảng và bộ đề thi trắc nghiệm các kỳ trước qua Google Drive sau khi nhận sách." android:textColor="@color/sm_text"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:padding="10dp" android:background="@drawable/bg_sm_chip" android:text="⌖ Địa điểm hẹn giao nhận: Cổng 1 trường Bách Khoa hoặc KTX Khu A để xem sách." android:textColor="@color/sm_text"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="12dp" android:padding="12dp" android:background="@drawable/bg_sm_chip" android:text="🛡 Giao dịch an toàn tại khuôn viên\nKhuyến khích kiểm tra sách trước khi thanh toán" android:textColor="@color/sm_text" android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:orientation="horizontal" android:padding="8dp" android:background="@color/sm_card">
+        <Button android:id="@+id/btnMessageSeller" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="Nhắn tin"/>
+        <Button android:id="@+id/btnBuyNow" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="8dp" android:text="Mua ngay"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="64dp" android:orientation="horizontal" android:background="@android:color/white" android:gravity="center" android:elevation="8dp">
+    <TextView style="@style/SMNavItem" android:text="▢ Trang chủ"/>
+    <TextView style="@style/SMNavItem" android:text="▢ Danh mục"/>
+    <TextView style="@style/SMNavItem" android:text="♡ Yêu thích"/>
+    <TextView style="@style/SMNavItemSelected" android:text="▢ Tài khoản"/>
+</LinearLayout>

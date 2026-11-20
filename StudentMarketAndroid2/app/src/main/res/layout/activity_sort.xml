@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#99000000">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:orientation="vertical" android:padding="16dp" android:background="@drawable/bg_sm_card">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="━" android:textColor="#C4C9D5"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="☷ Sắp xếp theo ×" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="20sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tìm kiếm sản phẩm phù hợp nhanh hơn" android:textColor="@color/sm_subtext"/>
+        <RadioGroup android:id="@+id/rgSortOptions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <RadioButton android:layout_width="match_parent" android:layout_height="64dp" android:background="@drawable/bg_sm_chip" android:padding="10dp" android:text="Mới nhất (Được chuộng)\nSản phẩm vừa đăng tải gần đây" android:checked="true"/>
+            <RadioButton android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="8dp" android:padding="10dp" android:text="Giá thấp đến cao\nTiết kiệm chi phí sinh viên"/>
+            <RadioButton android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="8dp" android:padding="10dp" android:text="Giá cao đến thấp\nƯu tiên đồ công nghệ giá trị cao"/>
+            <RadioButton android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="8dp" android:padding="10dp" android:text="Tên sản phẩm: A → Z\nTheo thứ tự bảng chữ cái"/>
+            <RadioButton android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="8dp" android:padding="10dp" android:text="Tên sản phẩm: Z → A\nĐảo ngược bảng chữ cái"/>
+        </RadioGroup>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:padding="10dp" android:background="@drawable/bg_sm_chip" android:text="◇ Sắp xếp minh bạch dựa trên thời gian đăng và định giá sinh viên" android:textColor="@color/sm_text"/>
+        <Button android:id="@+id/btnApplySort" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="12dp" android:text="✓ Áp dụng"/>
+    </LinearLayout>
+</FrameLayout>

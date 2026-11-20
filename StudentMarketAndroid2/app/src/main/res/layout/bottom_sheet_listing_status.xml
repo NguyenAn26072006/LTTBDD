@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp" android:background="@drawable/sm_sheet">
+    <View android:layout_width="40dp" android:layout_height="4dp" android:background="@color/sm_border" android:layout_gravity="center" android:layout_marginBottom="18dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quản lý trạng thái"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/sm_text"/>
+
+            <TextView
+                android:id="@+id/tvStatusProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giáo trình Java cơ bản"
+                android:textColor="@color/sm_muted"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btnCloseStatusSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:textSize="28sp"
+            android:textColor="@color/sm_text"/>
+    </LinearLayout>
+    <RadioGroup android:id="@+id/rgListingStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="16dp">
+        <RadioButton android:id="@+id/rbSelling" style="@style/SMStatusOption" android:text="Đang bán Hiển thị công khai, người mua có thể tìm thấy." android:checked="true"/>
+        <RadioButton android:id="@+id/rbSold" style="@style/SMStatusOption" android:text="Đã bán Đã giao dịch xong, tin vẫn được lưu lại."/>
+        <RadioButton android:id="@+id/rbHidden" style="@style/SMStatusOption" android:text="Tạm ẩn Ẩn khỏi tìm kiếm, có thể bật lại bất cứ lúc nào."/>
+    </RadioGroup>
+    <Button android:id="@+id/btnUpdateListingStatus" style="@style/SMButtonPrimaryFull" android:text="Cập nhật trạng thái" android:layout_marginTop="16dp"/>
+</LinearLayout>

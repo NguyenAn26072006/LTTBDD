@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:orientation="vertical" android:padding="8dp" android:background="@drawable/bg_sm_card">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="112dp">
+        <ImageView android:id="@+id/imgProduct" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@android:drawable/ic_menu_gallery" android:contentDescription="Ảnh sản phẩm"/>
+        <TextView android:id="@+id/tvProductCondition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|start" android:background="@drawable/bg_sm_chip" android:padding="5dp" android:text="Mới 95%" android:textColor="@color/sm_text" android:textSize="11sp"/>
+        <TextView android:id="@+id/btnFavorite" android:layout_width="34dp" android:layout_height="34dp" android:layout_gravity="top|end" android:gravity="center" android:background="@drawable/bg_sm_card" android:text="♡" android:textColor="@color/sm_red" android:textSize="22sp"/>
+    </FrameLayout>
+    <TextView android:id="@+id/tvProductPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="50.000₫" android:textColor="@color/sm_primary" android:textStyle="bold" android:textSize="18sp"/>
+    <TextView android:id="@+id/tvProductName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Giáo trình Java cơ bản" android:textColor="@color/sm_text" android:textStyle="bold" android:maxLines="2"/>
+    <TextView android:id="@+id/tvProductSeller" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🎓 ĐH Bách Khoa" android:textColor="@color/sm_subtext" android:textSize="12sp"/>
+    <TextView android:id="@+id/tvProductStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="5 phút trước • Có sẵn" android:textColor="@color/sm_green" android:textSize="11sp"/>
+</LinearLayout>

@@ -1,0 +1,154 @@
+<resources>
+    <style name="SMTopTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/sm_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">8dp</item>
+    </style>
+    <style name="SMTopIcon">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/sm_text</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SMLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/sm_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+    <style name="SMHint">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/sm_muted</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="SMInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/sm_card</item>
+        <item name="android:paddingHorizontal">14dp</item>
+        <item name="android:textColor">@color/sm_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="SMInputMulti" parent="SMInput">
+        <item name="android:layout_height">104dp</item>
+        <item name="android:padding">14dp</item>
+    </style>
+    <style name="SMButtonPrimary">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:backgroundTint">@color/sm_blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SMButtonPrimaryFull" parent="SMButtonPrimary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">0dp</item>
+    </style>
+    <style name="SMButtonOutline" parent="SMButtonPrimary">
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/sm_blue</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+    </style>
+    <style name="SMButtonDanger" parent="SMButtonPrimary">
+        <item name="android:backgroundTint">@color/sm_red</item>
+    </style>
+    <style name="SMButtonSmallOutline" parent="SMButtonOutline">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="SMButtonSmallDanger" parent="SMButtonSmallOutline">
+        <item name="android:textColor">@color/sm_red</item>
+        <item name="android:layout_marginStart">6dp</item>
+    </style>
+    <style name="SMBottomActions">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="SMImageAdd">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/sm_blue</item>
+        <item name="android:background">@drawable/sm_card</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SMImagePlaceholder" parent="SMImageAdd">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:background">@drawable/sm_image_placeholder</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="SMRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/sm_text</item>
+    </style>
+    <style name="SMChip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/sm_muted</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="SMChipSelected" parent="SMChip">
+        <item name="android:backgroundTint">@color/sm_blue_light</item>
+        <item name="android:textColor">@color/sm_blue</item>
+    </style>
+    <style name="SMProductName">
+        <item name="android:textColor">@color/sm_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="SMPrice">
+        <item name="android:textColor">@color/sm_blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="SMStatus">
+        <item name="android:textColor">#087A4B</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="SMFloatingButton" parent="SMButtonPrimary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_margin">12dp</item>
+    </style>
+    <style name="SMNavItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/sm_muted</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="SMNavItemSelected" parent="SMNavItem">
+        <item name="android:textColor">@color/sm_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SMEditThumb">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+    <style name="SMStatusOption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/sm_card</item>
+        <item name="android:textColor">@color/sm_text</item>
+    </style>
+</resources>

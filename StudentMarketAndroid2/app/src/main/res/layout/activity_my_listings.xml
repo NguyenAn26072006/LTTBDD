@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/sm_bg">
+    <include layout="@layout/include_top_bar"/>
+    <TextView android:id="@+id/tvListingCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12 tin" android:textColor="@color/sm_blue" android:textStyle="bold" android:layout_gravity="end" android:paddingHorizontal="20dp"/>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="52dp" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="horizontal" android:paddingHorizontal="12dp">
+            <Button style="@style/SMChipSelected" android:text="Tất cả (12)"/>
+            <Button style="@style/SMChip" android:text="Đang bán (8)"/>
+            <Button style="@style/SMChip" android:text="Đã bán (3)"/>
+            <Button style="@style/SMChip" android:text="Tạm ẩn"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvMyListings" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp"/>
+    <Button android:id="@+id/btnAddListing" style="@style/SMFloatingButton" android:text="+ Đăng bán"/>
+    <include layout="@layout/include_bottom_nav"/>
+</LinearLayout>

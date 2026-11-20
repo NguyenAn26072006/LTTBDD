@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/sm_bg">
+    <include layout="@layout/include_top_bar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <Linearayout android:background="@drawable/sm_card" android:padding="14dp" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Trạng thái tin đăng Đang bán" android:textColor="@color/sm_text"/>
+                <TextView android:id="@+id/btnChangeStatus" android:text="Thay đổi" android:textColor="@color/sm_blue" android:textStyle="bold"/>
+            </Linearayout>
+            <TextView style="@style/SMLabel" android:text="Hình ảnh sản phẩm"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="80dp" android:orientation="horizontal">
+                <ImageView style="@style/SMEditThumb" android:src="@drawable/sm_image_placeholder"/>
+                <ImageView style="@style/SMEditThumb" android:src="@drawable/sm_image_placeholder"/>
+                <TextView style="@style/SMImageAdd" android:text="＋"/>
+            </LinearLayout>
+            <TextView style="@style/SMLabel" android:text="Tên sản phẩm *"/>
+            <EditText android:id="@+id/edtEditName" style="@style/SMInput" android:text="Giáo trình Java cơ bản"/>
+            <TextView style="@style/SMLabel" android:text="Giá bán *"/>
+            <EditText android:id="@+id/edtEditPrice" style="@style/SMInput" android:text="50.000" android:inputType="numberDecimal"/>
+            <TextView style="@style/SMLabel" android:text="Tình trạng hàng hóa *"/>
+            <RadioGroup android:id="@+id/rgEditCondition" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <RadioButton style="@style/SMRadio" android:text="Mới 100%"/>
+                <RadioButton style="@style/SMRadio" android:text="Đã dùng 90-99%" android:checked="true"/>
+                <RadioButton style="@style/SMRadio" android:text="Dưới 90%"/>
+            </RadioGroup>
+            <TextView style="@style/SMLabel" android:text="Mô tả sản phẩm"/>
+            <EditText android:id="@+id/edtEditDescription" style="@style/SMInputMulti" android:text="Sách còn mới 95%, không ghi chú, giữ bìa cẩn thận." android:gravity="top" android:inputType="textMultiLine"/>
+            <TextView android:id="@+id/btnDeleteFromEdit" android:text="▢ Xóa tin đăng" android:textColor="@color/sm_red" android:textStyle="bold" android:gravity="center" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout style="@style/SMBottomActions">
+        <Button android:id="@+id/btnSaveChanges" style="@style/SMButtonPrimaryFull" android:text="Lưu thay đổi"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/sm_background">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Student Market 🔍 👤" android:textColor="@color/sm_primary" android:textStyle="bold" android:textSize="20sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="← Danh mục sản phẩm" android:textColor="@color/sm_text" android:textStyle="bold" android:textSize="22sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Khám phá 6 nhóm đồ dùng ký túc xá , trường học" android:textColor="@color/sm_subtext"/>
+            <EditText android:id="@+id/edtCategorySearch" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="14dp" android:background="@drawable/bg_sm_search" android:padding="12dp" android:hint="⌕ Tìm theo giáo trình, laptop, máy tính Casio..."/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="6 danh mục sản phẩm" android:textColor="@color/sm_text" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="☷ Lọc" android:textColor="@color/sm_primary"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="vertical">
+                <include layout="@layout/item_category"/>
+                <include layout="@layout/item_category"/>
+                <include layout="@layout/item_category"/>
+                <include layout="@layout/item_category"/>
+                <include layout="@layout/item_category"/>
+                <include layout="@layout/item_category"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="16dp" android:background="@drawable/bg_sm_chip" android:text="＋ Bạn muốn bán lại đồ cũ?\nĐăng tin miễn phí trong 30 giây Đăng ngay" android:textColor="@color/sm_primary" android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_bottom_navigation"/>
+</LinearLayout>
